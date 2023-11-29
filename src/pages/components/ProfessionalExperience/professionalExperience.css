@@ -1,0 +1,18 @@
+.professional-experience {
+  display: flex;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.5rem;
+}
+.professional-experience:hover {
+  background-color: var(--second);
+  color: var(--blackblue);
+  border-radius: 1rem;
+}
+.pe-h6 {
+  font-size: 1rem;
+}
+.pe-list {
+  list-style: disc;
+}

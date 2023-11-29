@@ -1,0 +1,108 @@
+.container-popup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+}
+.close {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: #debb6125 0px 5px 5px;
+  transition: 0.3s;
+}
+.close:hover {
+  box-shadow: #c7a65460 0px 5px 15px;
+  transform: translateY(-2px);
+}
+.main-roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff44;
+  border-radius: 1rem;
+}
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+/* Footer */
+.container-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(
+    0deg,
+    rgba(90, 90, 90, 0.37) 0%,
+    rgba(85, 76, 53, 0.37) 0.01%,
+    rgba(90, 90, 90, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-footer:hover {
+  height: 80px;
+}
+
+.arrow-down {
+  display: flex;
+  align-items: end;
+  cursor: pointer;
+  animation: arrow-down-moves 2s infinite cubic-bezier(0.17, 0.67, 0.05, 0.87);
+}
+@keyframes arrow-down-moves {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Card */
+.container-card {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: #debb6125 0px 5px 5px;
+  background-color: var(--main);
+  border-radius: 4px;
+}
+/* tags */
+.tag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  line-height: 1.1rem;
+  color: var(--blackblue);
+  cursor: pointer;
+  background-color: var(--second);
+
+  box-shadow: #debb6125 0px 5px 5px;
+  transition: 0.3s;
+}
