@@ -5,9 +5,9 @@ const Linkitem = ({ id, name, sendPageToParent }) => {
     sendPageToParent(e.target.id);
   };
   return (
-    <span onClick={sendInfoRoadMap} id={id} className="rmm-box">
+    <button onClick={sendInfoRoadMap} id={id} className="rmm-box">
       {name}
-    </span>
+    </button>
   );
 };
 
@@ -37,6 +37,7 @@ export function RoadMapMenu({ toggleRoadMap, redirectTo }) {
           id="graphisme"
           name="Graphisme"
         />
+        <a href="#">mentions legales</a>
         <span onClick={sentInoRoadMap} className="close">
           <CloseButton className="close"></CloseButton>
         </span>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./roadmap.css";
 import { RoadMapMenu } from "./RoadmapMenu.jsx";
+import { Legalesmentions } from "../../legales mentions/Legalmentions.jsx";
 
 export function RoadMap({ knowPage }) {
   const [roadMapstate, setRoadMapState] = useState(false);
@@ -19,8 +20,7 @@ export function RoadMap({ knowPage }) {
       {roadMapstate && (
         <RoadMapMenu
           toggleRoadMap={toggleRoadMap}
-          redirectTo={redirectTo}
-        ></RoadMapMenu>
+          redirectTo={redirectTo}></RoadMapMenu>
       )}
     </>
   );
