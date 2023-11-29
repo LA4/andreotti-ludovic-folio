@@ -1,11 +1,11 @@
 import { CloseButton } from "../../../icons/close.jsx";
 
-const Linkitem = ({ id, name, sendPageToParent }) => {
+const Linkitem = ({ id, name, sendPageToParent, ...props }) => {
   const sendInfoRoadMap = (e) => {
     sendPageToParent(e.target.id);
   };
   return (
-    <button onClick={sendInfoRoadMap} id={id} className="rmm-box">
+    <button {...props} onClick={sendInfoRoadMap} id={id} className="rmm-box">
       {name}
     </button>
   );
@@ -31,13 +31,19 @@ export function RoadMapMenu({ toggleRoadMap, redirectTo }) {
           id="illustration"
           name="Illustration"
         />
-        <Linkitem sendPageToParent={sendPageToParent} id="cv" name="CV" />
         <Linkitem
           sendPageToParent={sendPageToParent}
           id="graphisme"
           name="Graphisme"
         />
-        <a href="#">mentions legales</a>
+        <Linkitem sendPageToParent={sendPageToParent} id="cv" name="CV" />
+        <Linkitem
+          style={{ height: "20px", fontSize: ".6rem" }}
+          sendPageToParent={sendPageToParent}
+          id="cv"
+          name="Mentions Legales"
+        />
+
         <span onClick={sentInoRoadMap} className="close">
           <CloseButton className="close"></CloseButton>
         </span>

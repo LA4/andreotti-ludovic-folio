@@ -44,8 +44,8 @@ function App() {
         <AnimatePresence>
           {showPage == "home" ? <Home></Home> : ""}
           {showPage == "illustration" ? <Illustration></Illustration> : ""}
-          {showPage == "cv" ? <Cv></Cv> : ""}
           {showPage == "graphisme" ? <Graphisme></Graphisme> : ""}
+          {showPage == "cv" ? <Cv></Cv> : ""}
         </AnimatePresence>
 
         <Footer clickNext={clickNext} page={showPage}></Footer>
