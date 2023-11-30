@@ -2,9 +2,11 @@ import "./illustration.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { IMAGES } from "./imageAPI/images";
 import { useState } from "react";
+import { Arrow } from "./../components/carousel/Arrow";
 export function Illustration() {
   const [actualPicture, setActualPicture] = useState(0);
   const [nextPicture, setNextPicture] = useState(1);
+  const [visible, setVisible] = useState(false);
   const nextImg = () => {
     if (actualPicture >= IMAGES.length - 1) {
       setActualPicture(0);
@@ -25,8 +27,7 @@ export function Illustration() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="container-illustration"
-        >
+          className="container-illustration">
           <div className="container-img-description">
             <div className="title-illustration">
               {IMAGES[actualPicture].title}
@@ -36,8 +37,7 @@ export function Illustration() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -100, opacity: 0 }}
-              className="aside-description"
-            >
+              className="aside-description">
               {IMAGES[actualPicture].description}
             </motion.aside>
             <div onClick={nextImg} className="container-img">
@@ -53,6 +53,16 @@ export function Illustration() {
               />
               <AnimatePresence>
                 <motion.img
+                  whileHover={{
+                    scale: 1.02,
+                    x: -15,
+                  }}
+                  onHoverStart={(e) => {
+                    setVisible(true);
+                  }}
+                  onHoverEnd={(e) => {
+                    setVisible(false);
+                  }}
                   key={IMAGES[actualPicture].source}
                   src={IMAGES[actualPicture].source}
                   initial={{ x: 150, opacity: 0 }}
@@ -60,8 +70,21 @@ export function Illustration() {
                   exit={{ x: -150, opacity: 0 }}
                   transition={{ duration: 0.5 }}
                   className="img-front"
-                  alt=""
+                  alt={IMAGES[actualPicture].title}
                 />
+                {visible && (
+                  <motion.span
+                    initial={{ x: 150, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    style={{
+                      position: "absolute",
+                      right: "20%",
+                      display: "flex",
+                      width: "50px",
+                    }}>
+                    <Arrow right></Arrow>
+                  </motion.span>
+                )}
               </AnimatePresence>
             </div>
           </div>

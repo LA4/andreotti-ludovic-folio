@@ -41,6 +41,7 @@
   justify-content: center;
   background-color: var(--black);
   overflow: hidden;
+  cursor: pointer;
 }
 .img-back {
   display: flex;
