@@ -15,9 +15,9 @@ export function Graphisme() {
           <div className="graphism-descr">
             <span>Graphiste freelance</span>
             <p>
-              depuis 2019, j'ai pu mettre ma vison de l'art au service de
-              plusieurs entreprises. CE qui m'a permis d'evoluer et d"couvrir
-              différents mondes professionneles et associatifs.
+              depuis 2019, j'ai pu mettre ma vision de l'art au service de
+              plusieurs entreprises. Ce qui m'a permis d'évoluer et découvrir
+              différents mondes professionnels et associatifs.
             </p>
             <Tag>
               <span onClick={setVisible}>voir mes créations</span>
