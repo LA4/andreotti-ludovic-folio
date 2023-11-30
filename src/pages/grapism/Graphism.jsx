@@ -1,6 +1,6 @@
 import "./graphism.css";
 import { Carousel } from "./../components/carousel/Carousel.jsx";
-import { IMAGES } from "./../illustration/imageAPI/images";
+import { IMAGESG } from "./../illustration/imageAPI/images";
 import { Tag } from "./../components/Tag.jsx";
 import { useState } from "react";
 export function Graphisme() {
@@ -24,7 +24,7 @@ export function Graphisme() {
             </Tag>
           </div>
         )}
-        {isVisible && <Carousel IMG={IMAGES}></Carousel>}
+        {isVisible && <Carousel IMG={IMAGESG}></Carousel>}
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 import "./illustration.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { IMAGES } from "./imageAPI/images";
+import { IMAGESI } from "./imageAPI/images";
 import { useState } from "react";
 import { Arrow } from "./../components/carousel/Arrow";
 export function Illustration() {
@@ -8,12 +8,12 @@ export function Illustration() {
   const [nextPicture, setNextPicture] = useState(1);
   const [visible, setVisible] = useState(false);
   const nextImg = () => {
-    if (actualPicture >= IMAGES.length - 1) {
+    if (actualPicture >= IMAGESI.length - 1) {
       setActualPicture(0);
     } else {
       setActualPicture(actualPicture + 1);
     }
-    if (nextPicture >= IMAGES.length - 1) {
+    if (nextPicture >= IMAGESI.length - 1) {
       setNextPicture(0);
     } else {
       setNextPicture(nextPicture + 1);
@@ -30,20 +30,20 @@ export function Illustration() {
           className="container-illustration">
           <div className="container-img-description">
             <div className="title-illustration">
-              {IMAGES[actualPicture].title}
+              {IMAGESI[actualPicture].title}
             </div>
             <motion.aside
-              key={IMAGES[nextPicture].description}
+              key={IMAGESI[nextPicture].description}
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -100, opacity: 0 }}
               className="aside-description">
-              {IMAGES[actualPicture].description}
+              {IMAGESI[actualPicture].description}
             </motion.aside>
             <div onClick={nextImg} className="container-img">
               <motion.img
-                key={IMAGES[nextPicture].source}
-                src={IMAGES[nextPicture].source}
+                key={IMAGESI[nextPicture].source}
+                src={IMAGESI[nextPicture].source}
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 0.4 }}
                 exit={{ x: -100, opacity: 1 }}
@@ -63,14 +63,14 @@ export function Illustration() {
                   onHoverEnd={(e) => {
                     setVisible(false);
                   }}
-                  key={IMAGES[actualPicture].source}
-                  src={IMAGES[actualPicture].source}
+                  key={IMAGESI[actualPicture].source}
+                  src={IMAGESI[actualPicture].source}
                   initial={{ x: 150, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -150, opacity: 0 }}
                   transition={{ duration: 0.5 }}
                   className="img-front"
-                  alt={IMAGES[actualPicture].title}
+                  alt={IMAGESI[actualPicture].title}
                 />
                 {visible && (
                   <motion.span

@@ -13,7 +13,19 @@ import { supportermarseillais } from "./../illustration/supportermarseillais.jpg
 import { variouscrew } from "./../illustration/variouscrew.png";
 import { wallpaperpokemon } from "./../illustration/Wallpaper_pokemon.jpg";
 import { wallpaperpokemon2 } from "./../illustration/Wallpaper_pokemon_phne.png";
-export const IMAGES = [
+
+import { affichetutoratmarseillais4 } from "./../../grapism/graphism/affichetutoratmarseillais4.jpg";
+import { carosserie } from "./../../grapism/graphism/carroserie.png";
+import { macaquinn } from "./../../grapism/graphism/macaquinn.jpg";
+import { majicmusic } from "./../../grapism/graphism/majicmusic.png";
+import { readsercher } from "./../../grapism/graphism/readsercher.png";
+import { readsercherfond } from "./../../grapism/graphism/readSercher_fond.jpg";
+import { rugby } from "./../../grapism/graphism/rugbycoupedumonde.jpg";
+import { thebooktropetherory } from "./../../grapism/graphism/thebooktropetheory.jpg";
+import { affichetutoratMarseillais2 } from "./../../grapism/graphism/tutoratmarseillaisaffiche.jpg";
+import { affichetutoratMarseillais1 } from "./../../grapism/graphism/tutoratmarseilleaffiche1.jpg";
+import { affichetutoratMarseillais3 } from "./../../grapism/graphism/tutoratmarseilleaffiche3.jpg";
+export const IMAGESI = [
   {
     title: "Bureau en 3D",
     source: bureau3D,
@@ -99,5 +111,51 @@ export const IMAGES = [
     title: "Pokeballs Wallpaper 2",
     source: wallpaperpokemon2,
     description: "Fond d’écran des trois pokéballs réalisées en 3D.",
+  },
+];
+export const IMAGESG = [
+  {
+    title: "Affiche-TutoratMarseillais-4",
+    source: affichetutoratmarseillais4,
+  },
+  {
+    title: "Carroserie",
+    source: carosserie,
+  },
+  {
+    title: "Macaquinn",
+    source: macaquinn,
+  },
+  {
+    title: "Majic music",
+    source: majicmusic,
+  },
+  {
+    title: "Read Sercher",
+    source: readsercher,
+  },
+  {
+    title: "Read Sercher fond",
+    source: readsercherfond,
+  },
+  {
+    title: "Coupe du monde de rugby",
+    source: rugby,
+  },
+  {
+    title: "The book trope theory",
+    source: thebooktropetherory,
+  },
+  {
+    title: "Affiche tutorat marseillais 2",
+    source: affichetutoratMarseillais2,
+  },
+  {
+    title: "Affiche tutorat marseillais 1",
+    source: affichetutoratMarseillais1,
+  },
+  {
+    title: "Affiche tutorat marseillais 3",
+    source: affichetutoratMarseillais3,
   },
 ];
