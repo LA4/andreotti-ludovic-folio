@@ -40,7 +40,7 @@ export function RoadMapMenu({ toggleRoadMap, redirectTo }) {
         <Linkitem
           style={{ height: "20px", fontSize: ".6rem" }}
           sendPageToParent={sendPageToParent}
-          id="cv"
+          id="legalmention"
           name="Mentions Legales"
         />
 

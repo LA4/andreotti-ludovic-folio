@@ -6,6 +6,7 @@ import { Illustration } from "./pages/illustration/Illustration.jsx";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Graphisme } from "./pages/grapism/Graphism.jsx";
+import { Legalmentions } from "./pages/legalmentions/Legalmentions";
 
 function App() {
   const [showPage, setShowPage] = useState("home");
@@ -21,6 +22,9 @@ function App() {
     }
     if (data == "graphisme") {
       setShowPage("graphisme");
+    }
+    if (data == "legalmention") {
+      setShowPage("legalmention");
     }
   };
   const clickNext = (page) => {
@@ -46,6 +50,7 @@ function App() {
           {showPage == "illustration" ? <Illustration></Illustration> : ""}
           {showPage == "graphisme" ? <Graphisme></Graphisme> : ""}
           {showPage == "cv" ? <Cv></Cv> : ""}
+          {showPage == "legalmention" ? <Legalmentions></Legalmentions> : ""}
         </AnimatePresence>
 
         <Footer clickNext={clickNext} page={showPage}></Footer>
