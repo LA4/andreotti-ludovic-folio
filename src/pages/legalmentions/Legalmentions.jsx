@@ -33,7 +33,7 @@ export function Legalmentions() {
         </div>
         <div style={legalmentionStyle}>
           <h3 style={{ textDecoration: "underline", textAlign: "center" }}>
-            Hebergeur du site{" "}
+            Hebergeur du site
           </h3>
           <span>OVH</span>
           <p style={{ maxWidth: "600px" }}>
@@ -50,12 +50,12 @@ export function Legalmentions() {
         </div>
         <div style={legalmentionStyle}>
           <h3 style={{ textDecoration: "underline" }}>
-            Propriété intellectuelles
+            Propriété intellectuelle
           </h3>
           <p style={{ maxWidth: "600px" }}>
             Les images, dessins et autres créations utilisés dans ce site
-            internet est la propriété de Andreotti ludovic et sont des créations
-            originales. @tout droits réservés
+            internet sont la propriété de "Andreotti ludovic" et constituent des
+            créations originales. Tout droits réservés.
           </p>
         </div>
       </div>

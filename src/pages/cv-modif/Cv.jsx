@@ -33,7 +33,7 @@ export function Cv() {
           <div className="header-cv">
             <h1>Andreotti</h1>
             <h3>Ludovic</h3>
-            <h2>Devellopeur Web</h2>
+            <h2>Développeur web</h2>
             <div className="container-img-cv">
               <img src={pp} alt="" />
             </div>
