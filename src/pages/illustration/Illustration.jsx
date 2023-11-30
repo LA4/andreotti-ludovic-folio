@@ -1,6 +1,6 @@
 import "./illustration.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { IMAGESI } from "./imageAPI/images";
+import { IMAGESI } from "../../imageAPI/images";
 import { useState } from "react";
 import { Arrow } from "./../components/carousel/Arrow";
 export function Illustration() {

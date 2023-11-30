@@ -1,6 +1,6 @@
 import "./graphism.css";
 import { Carousel } from "./../components/carousel/Carousel.jsx";
-import { IMAGESG } from "./../illustration/imageAPI/images";
+import { IMAGESG } from "../../imageAPI/images.js";
 import { Tag } from "./../components/Tag.jsx";
 import { useState } from "react";
 export function Graphisme() {

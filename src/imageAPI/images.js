@@ -1,36 +1,36 @@
-import { bureau3D } from "./../illustration/bureau3d.jpg";
-import { lit3D } from "./../illustration/chambre3d.png";
-import { dragons } from "./../illustration/fourth Wing.jpg";
-import { hommeetchat } from "./../illustration/hommeetchat.jpg";
-import { hypolove } from "./../illustration/Hypolove.jpg";
-import { inktober1 } from "./../illustration/inktober 01.jpg";
-import { inktober13 } from "./../illustration/inktober 13.jpg";
-import { inktober14 } from "./../illustration/inktober14.jpg";
-import { pokeball96 } from "./../illustration/pokeball9-6.png";
-import { pokecenter } from "./../illustration/pokecenter.jpg";
-import { readtoescape } from "./../illustration/read to escape.png";
-import { supportermarseillais } from "./../illustration/supportermarseillais.jpg";
-import { variouscrew } from "./../illustration/variouscrew.png";
-import { wallpaperpokemon } from "./../illustration/Wallpaper_pokemon.jpg";
-import { wallpaperpokemon2 } from "./../illustration/Wallpaper_pokemon_phne.png";
+import bureau3D from "/illustration/bureau3d.jpg";
+import lit3D from "/illustration/chambre3d.png";
+import dragons from "/illustration/fourth Wing.jpg";
+import hommeetchat from "/illustration/hommeetchat.jpg";
+import hypolove from "/illustration/Hypolove.jpg";
+import inktober1 from "/illustration/Inktober01.jpg";
+import inktober13 from "/illustration/Inktober13.jpg";
+import inktober14 from "/illustration/Inktober14.jpg";
+import pokeball96 from "/illustration/pokeball9-6.png";
+import pokecenter from "/illustration/pokecenter.jpg";
+import readtoescape from "/illustration/read to escape.png";
+import supportermarseillais from "/illustration/supportermarseillais.jpg";
+import variouscrew from "/illustration/variouscrew.png";
+import wallpaperpokemon from "/illustration/Wallpaper_pokemon.jpg";
+import wallpaperpokemon2 from "/illustration/Wallpaper_pokemon_phne.png";
+import affichetutoratmarseillais4 from "/graphism/affichetutoratmarseillais4.jpg";
+import carosserie from "/graphism/carroserie.png";
+import macaquinn from "/graphism/macaquinn.jpg";
+import majicmusic from "/graphism/majicmusic.png";
+import readsercher from "/graphism/readsercher.png";
+import readsercherfond from "/graphism/readSercher_fond.jpg";
+import rugby from "/graphism/rugbycoupedumonde.jpg";
+import thebooktropetherory from "/graphism/thebooktropetheory.jpg";
+import affichetutoratMarseillais2 from "/graphism/tutoratmarseillaisaffiche2.jpg";
+import affichetutoratMarseillais from "/graphism/tutoratmarseilleaffiche.jpg";
+import affichetutoratMarseillais3 from "/graphism/tutoratmarseilleaffiche3.jpg";
 
-import { affichetutoratmarseillais4 } from "./../../grapism/graphism/affichetutoratmarseillais4.jpg";
-import { carosserie } from "./../../grapism/graphism/carroserie.png";
-import { macaquinn } from "./../../grapism/graphism/macaquinn.jpg";
-import { majicmusic } from "./../../grapism/graphism/majicmusic.png";
-import { readsercher } from "./../../grapism/graphism/readsercher.png";
-import { readsercherfond } from "./../../grapism/graphism/readSercher_fond.jpg";
-import { rugby } from "./../../grapism/graphism/rugbycoupedumonde.jpg";
-import { thebooktropetherory } from "./../../grapism/graphism/thebooktropetheory.jpg";
-import { affichetutoratMarseillais2 } from "./../../grapism/graphism/tutoratmarseillaisaffiche.jpg";
-import { affichetutoratMarseillais1 } from "./../../grapism/graphism/tutoratmarseilleaffiche1.jpg";
-import { affichetutoratMarseillais3 } from "./../../grapism/graphism/tutoratmarseilleaffiche3.jpg";
 export const IMAGESI = [
   {
     title: "Bureau en 3D",
     source: bureau3D,
     description:
-      "Afin de découvrir le logiciel BLENDER, j’ai voulu réinterpréter un affiche d’ameublement.",
+      "Afin de découvrir le logiciel BLENDER, j'ai voulu interpréter une affiche d'ameublement dans le style de magasins connu.",
   },
   {
     title: "Lit en 3D",
@@ -60,19 +60,19 @@ export const IMAGESI = [
     title: "Inktober - Rêve",
     source: inktober1,
     description:
-      "Dessin réalisé à l'occasion de l’Inkctober ( événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour). Ce dessin est une représentation abstraite d’un rêve. ",
+      "Dessin réalisé à l'occasion de l’Inkctober (événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour). Ce dessin est une représentation abstraite d’un rêve. ",
   },
   {
     title: "Inktober - s'élever",
     source: inktober13,
     description:
-      "Dessin réalisé à l'occasion de l’Inkctober ( événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour).Ce dessin fait référence au mot ‘s’élever’. ",
+      "Dessin réalisé à l'occasion de l’Inkctober (événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour).Ce dessin fait référence au mot ‘s’élever’. ",
   },
   {
     title: "Inktober - Chateau",
     source: inktober14,
     description:
-      "Dessin réalisé à l'occasion de l’Inkctober ( événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour).Ce dessin est un château abstrait. ",
+      "Dessin réalisé à l'occasion de l’Inkctober (événement organisé en octobre, durant ce mois nous devons réaliser un dessin par jour).Ce dessin est un château abstrait. ",
   },
   {
     title: "Pokéballs",
@@ -89,7 +89,7 @@ export const IMAGESI = [
     title: "Read to Escape",
     source: readtoescape,
     description:
-      "Dessin rapide suite à une idée que j’ai eu sur le moment.Il représente un jeune femme protégée de la pluie par un livre.",
+      "Dessin rapide suite à une idée que j’ai eu sur le moment. Il représente une jeune femme protégée de la pluie par un livre.",
   },
   {
     title: "Supporter Marseillais",
@@ -113,6 +113,7 @@ export const IMAGESI = [
     description: "Fond d’écran des trois pokéballs réalisées en 3D.",
   },
 ];
+
 export const IMAGESG = [
   {
     title: "Affiche-TutoratMarseillais-4",
@@ -151,8 +152,8 @@ export const IMAGESG = [
     source: affichetutoratMarseillais2,
   },
   {
-    title: "Affiche tutorat marseillais 1",
-    source: affichetutoratMarseillais1,
+    title: "Affiche-tutorat-marseillais-1",
+    source: affichetutoratMarseillais,
   },
   {
     title: "Affiche tutorat marseillais 3",
