@@ -10,7 +10,7 @@ import { AnimatePresence, motion } from "framer-motion";
  */
 export function Carousel({ IMG = IMAGES }) {
   /**
-   * @type {[MainImageState, React.Dispatch<React.SetStateAction<MainImageState>>
+   * @type {[MainImageState, React.Dispatch<React.SetStateAction<MainImageState>]}
    */
   const [mainImage, setMainImage] = useState({});
   const [visible, setVisible] = useState(true);

@@ -66,9 +66,17 @@ export const CarouselSelectorImages = ({
   return (
     <>
       <div className="container-carousel-selector-image">
-        <span onClick={prevPage} className="carousel-selector-image_arrow_left">
+        <motion.span
+          whileHover={{
+            scale: 1.02,
+            x: -15,
+          }}
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          onClick={prevPage}
+          className="carousel-selector-image_arrow_left">
           <Arrow></Arrow>
-        </span>
+        </motion.span>
         <motion.ul
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -80,6 +88,10 @@ export const CarouselSelectorImages = ({
               className="carousel-selector-image_li">
               <AnimatePresence>
                 <motion.img
+                  whileHover={{
+                    scale: 1.02,
+                    x: 15,
+                  }}
                   key={IMAGES[precImage].source}
                   initial={{ opacity: 1, x: -20, scale: 0.9 }}
                   animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -94,6 +106,10 @@ export const CarouselSelectorImages = ({
           )}
           <li onClick={sendDataToParent} className="carousel-selector-image_li">
             <motion.img
+              whileHover={{
+                scale: 1.02,
+                x: 15,
+              }}
               key={IMAGES[currentImage].source}
               initial={{ opacity: 0.5, x: -20, scale: 0.5 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -108,6 +124,10 @@ export const CarouselSelectorImages = ({
               onClick={sendDataToParent}
               className="carousel-selector-image_li">
               <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  x: 15,
+                }}
                 key={IMAGES[nextImages].source}
                 initial={{ opacity: 0.5, x: -20, scale: 0.9 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -119,11 +139,17 @@ export const CarouselSelectorImages = ({
             </li>
           )}
         </motion.ul>
-        <span
+        <motion.span
+          whileHover={{
+            scale: 1.02,
+            x: 15,
+          }}
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           onClick={nextPage}
           className="carousel-selector-image_arrow_right">
           <Arrow right></Arrow>
-        </span>
+        </motion.span>
       </div>
     </>
   );

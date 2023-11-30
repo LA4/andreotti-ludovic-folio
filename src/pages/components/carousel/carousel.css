@@ -40,7 +40,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0 0;
+  object-position: center;
 }
 .carousel-selector-image_arrow_left {
   display: flex;
