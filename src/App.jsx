@@ -1,7 +1,8 @@
 import { RoadMap } from "./pages/components/roadMap/RoadMAp.jsx";
 import { Footer } from "./pages/components/Footer.jsx";
 import { Home } from "./pages/home/home.jsx";
-import { Cv } from "./pages/cv-modif/cv.jsx";
+// import { Cv } from "./pages/cv-modif/cv.jsx";
+import { Cv } from "./pages/cv2/Cv.jsx";
 import { Illustration } from "./pages/illustration/Illustration.jsx";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";

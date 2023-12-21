@@ -23,9 +23,6 @@
   font-family: "Poppin", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: #4d4949;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -42,6 +39,7 @@
   --blackblue: #31428c;
   --blue: #4e7aff;
   --lightblue: #6b80bf;
+  color: var(--white);
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -103,10 +101,6 @@ ul {
   list-style: none;
 }
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
   a:hover {
     color: #747bff;
   }
