@@ -65,12 +65,6 @@
 .rmm-box:hover {
   transform: scale(1.1);
 }
-.rmm-box:hover .rmm-button-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 @media screen and (max-width: 600px) {
   .main-roadmap {
     flex-direction: column-reverse;
