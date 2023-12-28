@@ -26,34 +26,52 @@
 }
 /* roadmap menu */
 .container-rmm {
+  position: fixed;
   z-index: 2;
-  position: absolute;
   display: flex;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding: 2rem;
   background-color: rgba(27, 23, 49, 0.89);
 }
 .rmm-box {
+  max-width: 100px;
   display: flex;
+  width: 100%;
+  height: 300px;
+  min-height: 150px;
   justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 50px;
-  margin: 0;
-  background-color: var(--second);
-  cursor: pointer;
-  border-radius: 0.4rem;
-  transition: 0.3s;
-  font-weight: 600;
+  align-items: flex-start;
+
+  background-color: var(--main);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.2rem;
+  background-repeat: no-repeat;
+  padding: 0;
+  transition: 0.6s;
+}
+.rmm-button-name {
+  font-size: 1rem;
+  padding: 4px;
+  background-color: rgba(27, 23, 49, 0.8);
+  width: 100%;
 }
 .rmm-box:hover {
   transform: scale(1.1);
-  border-radius: 1rem;
 }
-@media screen and (max-width: 400px) {
+.rmm-box:hover .rmm-button-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
   .main-roadmap {
     flex-direction: column-reverse;
     gap: 0.2rem;
@@ -64,10 +82,22 @@
   }
   /* roadmap menu */
   .container-rmm {
-    display: flex;
+    top: 0;
+    bottom: 0;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
   }
   .rmm-box {
-    height: 4rem;
+    min-height: 50px;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .rmm-button-name {
+    background-color: rgba(27, 23, 49, 0.8);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 0.8rem;
   }
 }

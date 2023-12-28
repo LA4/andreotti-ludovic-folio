@@ -13,6 +13,7 @@ export function Home() {
           alignItems: "center",
           width: "100vw",
           height: "100vh",
+          paddingBottom: "50px",
         }}>
         <motion.div
           initial={{ opacity: 0, scale: 2.8 }}
